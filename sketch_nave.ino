@@ -1,0 +1,32 @@
+int nave=0;
+
+void setup() {
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(5,OUTPUT);
+  pinMode(2,INPUT);
+}
+
+void loop() {
+  nave= digitalRead(2);
+  if (nave==LOW) {
+  //el pulsador no está presionado, 
+  //solo está encendido el verde
+  digitalWrite(3,HIGH);// LED verde
+  digitalWrite(4,LOW);// LED rojo
+  digitalWrite(5,LOW);// LED rojo
+  }
+  else { //el pulsador está presionado
+  // el LED verde se apaga,
+  //parpadean los LEDs rojos
+  digitalWrite(3,LOW);
+  digitalWrite(4,LOW);
+  digitalWrite(5,HIGH);
+  delay(300); //duración encendido del LED rojo, 
+  //conectado al pin 5
+  digitalWrite(4,HIGH);
+  digitalWrite(5,LOW);
+  delay(2000); //duración encendido del LED de la mitad,
+  //conectado al pin 4
+}
+}
