@@ -1,3 +1,5 @@
+//sesión 4 - Ejercicio para hacer parpadear varios LEDs
+
 int nave=0;
 
 void setup() {
