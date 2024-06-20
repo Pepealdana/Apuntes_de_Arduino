@@ -1,0 +1,38 @@
+// En este montaje el led se enciende si el ultrasonido manda la señal indicada.
+
+int TRIG = 7; // trigger en pin 7
+int ECO = 11; // echo en pin 11
+int LED = 3; // LED en pin 3
+int DURACION;
+int DISTANCIA;
+
+void setup()
+{
+  pinMode(TRIG, OUTPUT); // trigger como salida
+  pinMode(ECO, INPUT); // echo como entrada
+  pinMode(LED, OUTPUT); // LED como salida
+  Serial.begin(9600);   // inicialización de comunicación serial a 9600 bps
+// Serial.begin es la velocidad de datos en bits por segundo
+// para la transmisión de datos en serie. (por lo general 9600)
+}
+
+void loop()
+{
+ 
+  digitalWrite(TRIG, HIGH); // generación del pulso a enviar
+  delay(1); // al pin conectado al trigger
+  digitalWrite(TRIG, LOW); // del sensor
+ 
+  DURACION = pulseIn(ECO, HIGH); // con función pulseIn se espera un pulso
+  // alto en Echo
+  DISTANCIA = DURACION / 40.5; // distancia medida en centímetros
+  Serial.println(DISTANCIA); // envió de valor de distancia por monitor serial
+  delay(200); // demora entre datos
+
+  if (DISTANCIA <= 20 && DISTANCIA >= 0){ // si distancia entre 0 y 20 cms.
+    digitalWrite(LED, HIGH); // enciende LED
+    delay(DISTANCIA * 10); // demora proporcional a la distancia
+    digitalWrite(LED, LOW); // apaga LED
+    }
+   
+}

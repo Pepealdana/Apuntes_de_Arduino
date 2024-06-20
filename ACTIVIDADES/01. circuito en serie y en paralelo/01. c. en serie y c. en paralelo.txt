@@ -1,0 +1,12 @@
+  // Para hacer este modelo de circuito solo se debe abrir un nuevo sketch
+  // Se carga la placa de Arduino con la siguiente instrucción:
+
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}

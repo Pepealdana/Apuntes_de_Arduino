@@ -1,0 +1,17 @@
+#include <Servo.h> 			// Se llama la biblioteca servo
+Servo Bit; 				// el servo en este ejercicio se llama Bit
+
+void setup() {
+Bit.attach(3);   			// se usará el pin digital 3
+
+}
+
+void loop() {
+ Bit.write(0);  			// write 0 indica que es la posición de reposo
+ delay(2000); 				// el tiempo de espera se da con delay, y va en milisegundos
+ Bit.write(90);				// este segundo movimiento en write es de 90 grados
+ delay(2000); 
+ Bit.write(180);
+ delay(2000); 
+
+}

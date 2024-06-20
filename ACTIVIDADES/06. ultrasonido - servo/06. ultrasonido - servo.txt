@@ -1,0 +1,58 @@
+// Este montaje hace mover el servo según la señal que envía el ultrasonido.
+
+#include <Servo.h>  
+Servo servo;     
+
+int TRIG = 5;    
+int ECO = 6;   
+int SERVO = 7;
+long duracion, 
+distancia;
+long aver[3];  
+
+
+void setup() 
+{       
+servo.attach(SERVO);  
+pinMode(TRIG, OUTPUT);  
+pinMode(ECO, INPUT);  
+servo.write(90);         
+delay(100);
+servo.detach(); 
+}
+
+void medida() 
+{  
+ digitalWrite(10,HIGH);
+digitalWrite(TRIG, LOW);
+delayMicroseconds(5); //el número de microsegundos para hacer una pausa
+digitalWrite(TRIG, HIGH);
+delayMicroseconds(15);
+digitalWrite(TRIG, LOW);
+pinMode(ECO, INPUT);
+duracion = pulseIn(ECO, HIGH);
+distancia = (duracion/2) / 30;    
+
+}
+
+void loop() 
+{ 
+  for (int i=0;i<=2;i++) 
+{   
+    medida();               
+   
+aver[i]=distancia;            
+    delay(10);             
+}
+ distancia=(aver[0]+aver[1]+aver[2])/3;    
+
+if ( distancia < 15) {
+ servo.attach(SERVO);
+  delay(1);
+ servo.write(0);  
+delay(3000);      
+ servo.write(90);    
+delay(2000);
+ servo.detach();      
+}
+}
