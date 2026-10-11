@@ -58,6 +58,10 @@ Los esquemas existentes se conservarán. Cuando no exista fotografía del montaj
 Este repositorio contiene apuntes y ejercicios de aprendizaje. Cuando una práctica se base en material de otra persona, se procurará citar la fuente original y diferenciar las adaptaciones realizadas.
 
 
+## Lista de comprobación
+
+Consulta [PENDIENTES.md](./PENDIENTES.md) para distinguir las guías publicadas de las pruebas técnicas, fotografías y mejoras que aún faltan.
+
 ## Estado de documentación
 
 Las diez actividades tienen una guía de trabajo enlazada desde esta página. En las actividades de programación se conservan los archivos originales y se incluyen sketches `.ino` para abrir en Arduino IDE. Los sketches revisados aún deben compilarse y probarse con los componentes físicos antes de considerarlos validados.
