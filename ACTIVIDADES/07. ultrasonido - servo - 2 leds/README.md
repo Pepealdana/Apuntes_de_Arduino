@@ -104,4 +104,4 @@ Carga el sketch y observa el Monitor serie. Acerca un objeto a menos de 10 cm y 
 ## Cierre
 ¿Qué controla el tiempo de movimiento? ¿Qué error evita el timeout? ¿Qué ocurre si el servo no tiene suficiente alimentación?
 
-**Validación:** revisión de código y documentación; falta probar el circuito real.
+**Validación:** el sketch compiló para Arduino Uno en GitHub Actions; falta probar el circuito real y confirmar los colores de los LED.
