@@ -72,4 +72,4 @@ Carga el sketch, abre Monitor serie a 9600 baudios y acerca/aleja un objeto resp
 ## Cierre
 ¿Qué ocurre cuando no hay eco? ¿Por qué un servo puede requerir alimentación externa?
 
-**Validación:** revisado sobre el archivo original; falta prueba física.
+**Validación:** el sketch compiló para Arduino Uno en GitHub Actions; falta la prueba física y la comprobación de la alimentación del servo.
