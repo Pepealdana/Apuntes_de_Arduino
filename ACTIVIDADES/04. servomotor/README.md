@@ -54,4 +54,4 @@ void loop() {
 ## Cierre
 ¿Qué hacen attach() y write()? ¿Por qué puede ser necesaria una fuente externa?
 
-**Validación:** la guía se basa en los archivos del repositorio; no se ha probado en hardware.
+**Validación:** el sketch compiló para Arduino Uno en GitHub Actions. El montaje físico y la alimentación aún deben comprobarse.
