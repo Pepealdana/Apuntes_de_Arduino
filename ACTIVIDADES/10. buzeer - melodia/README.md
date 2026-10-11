@@ -16,7 +16,7 @@ Confirma el pin de señal y la polaridad del buzzer según el modelo. No conecte
 - [Himno de Colombia (.ino)](./10_buzzer_himno_colombia.ino)
 - [Despacito (.ino)](./10_buzzer_despacito.ino)
 
-Los archivos .txt originales se conservan como referencia. Las versiones .ino se prepararon a partir de ellos para abrirlas en Arduino IDE. Son transcripciones extensas y deben considerarse ejemplos heredados: revisa su compilación y el resultado sonoro antes de utilizarlas en clase.
+Los archivos .txt originales se conservan como referencia. Las versiones .ino se prepararon a partir de ellos para abrirlas en Arduino IDE. Los tres sketches compilaron para Arduino Uno en GitHub Actions. Son transcripciones extensas heredadas: comprueba el resultado sonoro y los permisos de redistribución antes de utilizarlas en clase.
 
 ## Conceptos clave
 - tone(pin, frecuencia) genera un tono de la frecuencia indicada en hercios.
@@ -42,7 +42,8 @@ Los archivos .txt originales se conservan como referencia. Las versiones .ino se
 ¿Qué representa la frecuencia? ¿Qué controla la duración? ¿Qué diferencias hay entre un buzzer activo y uno pasivo?
 
 ## Pendiente de validación y atribución
-- [ ] Compilar cada sketch en la versión de Arduino IDE usada en el laboratorio.
+- [x] Compilar cada sketch para Arduino Uno mediante GitHub Actions.
+- [ ] Abrir los sketches en la versión de Arduino IDE usada en el laboratorio y verificar la compilación local.
 - [ ] Probar las tres melodías en el buzzer físico.
 - [ ] Confirmar el pinout del esquema.
 - [ ] Registrar la fuente de cada transcripción musical y revisar permisos/licencia antes de redistribuir arreglos de canciones comerciales.
