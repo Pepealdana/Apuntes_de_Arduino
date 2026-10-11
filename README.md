@@ -21,13 +21,13 @@ El repositorio reúne actividades progresivas. Cada práctica debe ayudar a comp
 | 1 | [Circuitos eléctricos en serie y en paralelo](./ACTIVIDADES/01.%20circuito%20en%20serie%20y%20en%20paralelo/README.md) |
 | 2 | [LED parpadeante](./ACTIVIDADES/02.%20led%20parpadea/README.md) |
 | 3 | [LED controlados por pulsador](./ACTIVIDADES/03.%20leds%20-%20interruptor/README.md) |
-| 4 | Servomotor |
-| 5 | Sensor ultrasónico y LED |
-| 6 | Sensor ultrasónico y servomotor |
-| 7 | Sensor ultrasónico, servomotor y dos LED |
-| 8 | Teclado musical |
-| 9 | Alarma con sensor ultrasónico y buzzer |
-| 10 | Buzzer y melodía |
+| 4 | [Servomotor](./ACTIVIDADES/04.%20servomotor/README.md) |
+| 5 | [Sensor ultrasónico y LED](./ACTIVIDADES/05.%20ultrasonido%20-%20led/README.md) |
+| 6 | [Sensor ultrasónico y servomotor](./ACTIVIDADES/06.%20ultrasonido%20-%20servo/README.md) |
+| 7 | [Sensor ultrasónico, servomotor y dos LED](./ACTIVIDADES/07.%20ultrasonido%20-%20servo%20-%202%20leds/README.md) |
+| 8 | [Teclado musical](./ACTIVIDADES/08.%20teclado%20musical/README.md) |
+| 9 | [Alarma con sensor ultrasónico y buzzer](./ACTIVIDADES/09.%20ultrasonido%20-%20buzzer%20alarma/README.md) |
+| 10 | [Buzzer y melodías](./ACTIVIDADES/10.%20buzeer%20-%20melodia/README.md) |
 
 ## Estructura de una actividad
 
@@ -56,3 +56,23 @@ Los esquemas existentes se conservarán. Cuando no exista fotografía del montaj
 ## Autoría y referencias
 
 Este repositorio contiene apuntes y ejercicios de aprendizaje. Cuando una práctica se base en material de otra persona, se procurará citar la fuente original y diferenciar las adaptaciones realizadas.
+
+
+## Estado de documentación
+
+Las diez actividades tienen una guía de trabajo enlazada desde esta página. En las actividades de programación se conservan los archivos originales y se incluyen sketches `.ino` para abrir en Arduino IDE. Los sketches revisados aún deben compilarse y probarse con los componentes físicos antes de considerarlos validados.
+
+| Actividad | Guía | Sketch actualizado | Foto real |
+|---|---|---|---|
+| 1. Serie/paralelo | Sí | No aplica | Pendiente |
+| 2. LED parpadeante | Sí | Sí | Pendiente |
+| 3. LED y pulsador | Sí | Sí | Pendiente |
+| 4. Servomotor | Sí | Sí | Pendiente |
+| 5. Ultrasonido y LED | Sí | Sí | Pendiente |
+| 6. Ultrasonido y servo | Sí | Sí | Pendiente |
+| 7. Ultrasonido, servo y LED | Sí | Sí | Pendiente |
+| 8. Teclado musical | Sí | Sí | Pendiente |
+| 9. Alarma ultrasónica | Sí | Sí | Pendiente |
+| 10. Buzzer y melodías | Sí | Sí (tres melodías) | Pendiente |
+
+La marca “Sketch actualizado” significa que existe una versión `.ino` publicada; no significa que ya se haya compilado ni probado en hardware.
