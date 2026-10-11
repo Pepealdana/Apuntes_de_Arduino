@@ -12,7 +12,7 @@ Este documento separa lo que ya está documentado de lo que requiere una comprob
 
 ## B. Verificación técnica pendiente
 
-- [ ] Compilar todos los sketches en un entorno Arduino Uno.
+- [x] Compilar todos los sketches para Arduino Uno mediante GitHub Actions.
 - [ ] Probar cada circuito con los componentes reales del laboratorio.
 - [ ] Confirmar que los pines de cada sketch coinciden con su esquema.
 - [ ] Registrar las versiones de Arduino IDE, placa y bibliotecas utilizadas.
@@ -50,4 +50,4 @@ Una actividad solo se debe marcar como **validada** cuando:
 4. La guía describe el comportamiento observado y las limitaciones.
 5. La evidencia visual corresponde al montaje real.
 
-Estado actual: las guías y sketches están publicados, pero las pruebas físicas y las fotografías siguen pendientes.
+Estado actual: las guías y sketches están publicados y la compilación automática de los sketches para Arduino Uno pasó. Las pruebas físicas y las fotografías siguen pendientes.
