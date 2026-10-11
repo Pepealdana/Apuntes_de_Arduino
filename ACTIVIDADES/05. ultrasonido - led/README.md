@@ -71,4 +71,4 @@ void loop() {
 ## Cierre
 ¿Por qué se divide el tiempo entre dos? ¿Para qué sirve el timeout de pulseIn()?
 
-**Validación:** código revisado; falta compilarlo y probarlo con el circuito real.
+**Validación:** el sketch compiló para Arduino Uno en GitHub Actions; falta probar el sensor físico y confirmar el cableado.
