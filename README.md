@@ -18,8 +18,8 @@ El repositorio reúne actividades progresivas. Cada práctica debe ayudar a comp
 
 | Sesión | Tema |
 |---|---|
-| 1 | Circuitos eléctricos en serie y en paralelo |
-| 2 | LED parpadeante |
+| 1 | [Circuitos eléctricos en serie y en paralelo](./ACTIVIDADES/01.%20circuito%20en%20serie%20y%20en%20paralelo/README.md) |
+| 2 | [LED parpadeante](./ACTIVIDADES/02.%20led%20parpadea/README.md) |
 | 3 | Control de LED mediante interruptor |
 | 4 | Servomotor |
 | 5 | Sensor ultrasónico y LED |
