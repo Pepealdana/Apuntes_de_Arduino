@@ -62,4 +62,4 @@ Carga el programa, acerca lentamente un objeto y comprueba que el buzzer suena d
 ## Cierre
 ¿Qué mide pulseIn()? ¿Por qué se divide el tiempo por dos? ¿Qué diferencia hay entre 10 cm y 1,5 m?
 
-**Validación:** código corregido, pendiente de compilación y prueba física.
+**Validación:** código corregido y compilado para Arduino Uno en GitHub Actions; falta la prueba física.
