@@ -64,7 +64,7 @@ Consulta [PENDIENTES.md](./PENDIENTES.md) para distinguir las guías publicadas 
 
 ## Estado de documentación
 
-Las diez actividades tienen una guía de trabajo enlazada desde esta página. En las actividades de programación se conservan los archivos originales y se incluyen sketches `.ino` para abrir en Arduino IDE. Los sketches revisados aún deben compilarse y probarse con los componentes físicos antes de considerarlos validados.
+Las diez actividades tienen una guía de trabajo enlazada desde esta página. En las actividades de programación se conservan los archivos originales y se incluyen sketches `.ino` para abrir en Arduino IDE. La compilación automática de los sketches para Arduino Uno pasó en GitHub Actions. Aún deben probarse con los componentes físicos antes de considerarlos validados. [Ver ejecución](https://github.com/Pepealdana/Apuntes_de_Arduino/actions/runs/38106744485).
 
 | Actividad | Guía | Sketch actualizado | Foto real |
 |---|---|---|---|
