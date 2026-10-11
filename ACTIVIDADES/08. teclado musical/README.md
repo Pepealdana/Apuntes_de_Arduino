@@ -48,4 +48,4 @@ Los rangos se basan en el código original; no son universales. Mide cada tecla 
 ## Cierre
 ¿Qué diferencia hay entre una entrada analógica y una digital? ¿Por qué hay que calibrar los umbrales?
 
-**Validación:** documentación preparada; falta verificar el circuito y sus valores analógicos reales.
+**Validación:** el sketch compiló para Arduino Uno en GitHub Actions; falta verificar el circuito y calibrar los valores analógicos reales.
