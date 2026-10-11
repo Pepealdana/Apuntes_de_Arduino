@@ -1,0 +1,44 @@
+name: Arduino sketch compilation
+
+on:
+  push:
+    paths:
+      - "ACTIVIDADES/**/*.ino"
+      - ".github/workflows/arduino-compile.yml"
+  pull_request:
+    paths:
+      - "ACTIVIDADES/**/*.ino"
+      - ".github/workflows/arduino-compile.yml"
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Arduino CLI
+        uses: arduino/setup-arduino-cli@v2
+
+      - name: Install Arduino AVR core and Servo library
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install arduino:avr
+          arduino-cli lib install Servo
+
+      - name: Compile every Arduino sketch for Uno
+        shell: bash
+        run: |
+          set -euo pipefail
+          count=0
+          while IFS= read -r -d '' file; do
+            name="$(basename "$file" .ino)"
+            sketch_dir="$RUNNER_TEMP/arduino-sketches/$name"
+            mkdir -p "$sketch_dir"
+            cp "$file" "$sketch_dir/$name.ino"
+            echo "Compiling: $file"
+            arduino-cli compile --fqbn arduino:avr:uno "$sketch_dir"
+            count=$((count + 1))
+          done < <(find ACTIVIDADES -type f -name '*.ino' -print0)
+          test "$count" -gt 0
+          echo "Compiled $count sketches."
